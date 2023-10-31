@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -21,6 +24,12 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
 
 .puddle {
@@ -50,13 +59,15 @@ body {
 
 .box {
     width: 200px;
+    height: 200px;
     padding: 20px;
     border: 1px solid #B0B0B0;
     text-align: center;
     background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth */
+    border-radius: 10px;
+    margin: 10px; /* Add margin between boxes */
 }
-
+    
 footer {
     background-color: #FF0000;
     color: white;
