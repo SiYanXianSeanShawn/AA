@@ -32,7 +32,7 @@ body {
     width: 250px;
     padding: 20px;
     text-align: center;
-    background-color: #FFFFFF;
+    background-color: #E8E8E8;
     border-radius: 10px;
     margin: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
@@ -40,7 +40,6 @@ body {
 
 .button {
     background-color: #FF3300;
-    color: white;
     border: none;
     padding: 10px 20px;
     text-align: center;
