@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+}
+
+.navbar {
+    background-color: #FF0000;
+    color: white;
+    font-family: Georgia, serif;
+    padding: 15px;
+    text-align: center;
+}
+
+.logo {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.background {
+    background-color: #ffffff;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.puddle {
+    background-color: #B0B0B0;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* Adjust the size of the puddles as per your preference */
+.puddle1 { width: 40px; height: 40px; }
+.puddle2 { width: 50px; height: 50px; }
+/* ... Add more puddles here ... */
+.puddle20 { width: 30px; height: 30px; }
+
+/* Rest of the CSS remains unchanged */
+/* ... */
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #B0B0B0;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px; /* Make box edges smooth */
+}
+
+footer {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* ... (previous styles remain unchanged) ... */
+
+.content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1; /* Ensure content boxes are above puddles */
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #B0B0B0;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px; /* Make box edges smooth */
+    margin: 10px; /* Add margin between boxes */
+    position: relative;
+    z-index: 2; /* Ensure content boxes are above puddles */
+}
+
+.puddle {
+    background-color: #B0B0B0;
+    border-radius: 50%;
+    position: absolute;
+    display: none;
+    animation: puddleAnimation 3s ease-in-out infinite;
+    opacity: 0; /* Initial opacity set to 0 */
+    z-index: 0; /* Ensure puddles are below content boxes */
+}
+
+.puddle.appear {
+    display: block;
+    opacity: 1; /* Change opacity to 1 when appearing */
+    animation: puddleAppear 1s ease-in-out;
+}
+
+@keyframes puddleAppear {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
