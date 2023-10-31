@@ -98,6 +98,8 @@ footer {
     animation: puddleAnimation 3s ease-in-out infinite;
     opacity: 0; /* Initial opacity set to 0 */
     z-index: 0; /* Ensure puddles are below content boxes */
+    animation: puddleAnimation 3s ease-in-out, puddleDisappear 2s ease-in-out;
+    opacity: 0; /* Set initial opacity to 0 for the disappearing effect */
 }
 
 .puddle.appear {
@@ -110,3 +112,9 @@ footer {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
+}
+
+@keyframes puddleDisappear {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}   
