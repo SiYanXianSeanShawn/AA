@@ -44,23 +44,6 @@ body {
 
 /* Rest of the CSS remains unchanged */
 /* ... */
-
-.content {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    border: 1px solid #B0B0B0;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin: 10px; /* Add margin between boxes */
-}
     
 footer {
     background-color: #FF0000;
