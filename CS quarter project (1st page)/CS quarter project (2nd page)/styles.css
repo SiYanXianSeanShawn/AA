@@ -1,60 +1,101 @@
-body {
+body, html {
     margin: 0;
-    font-family: Georgia, serif;
+    padding: 0;
+    height: 70%;
 }
 
+.container {
+    min-height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .navbar {
     background-color: #FF0000;
     color: white;
     font-family: Georgia, serif;
     padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
     font-family: "Courier New", monospace;
     font-weight: bold;
+    font-size: 24px;
 }
 
-.background {
-    background-color: #ffffff;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.nav-link {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
 }
 
-.puddle {
-    background-color: #B0B0B0;
-    border-radius: 50%;
-    position: absolute;
-    display: none;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
+.separator {
+    color: white;
+    font-size: 18px;
 }
-
-/* Adjust the size of the puddles as per your preference */
-.puddle1 { width: 40px; height: 40px; }
-.puddle2 { width: 50px; height: 50px; }
-/* ... Add more puddles here ... */
-.puddle20 { width: 30px; height: 30px; }
-
-/* Rest of the CSS remains unchanged */
-/* ... */
 
 .content {
     display: flex;
     justify-content: space-around;
-    padding: 50px 0;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
 }
 
 .box {
-    width: 200px;
+    width: 250px;
     padding: 20px;
-    border: 1px solid #B0B0B0;
     text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth */
+    background-color: WhiteSmoke;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+    background-color: #FF3300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #CC3300;
+}
+
+.footer-button {
+    background-color: #FF3300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.footer-button:hover {
+    background-color: #CC3300;
 }
 
 footer {
@@ -62,51 +103,6 @@ footer {
     color: white;
     text-align: center;
     padding: 15px;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-}
-/* ... (previous styles remain unchanged) ... */
-
-.content {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    z-index: 1; /* Ensure content boxes are above puddles */
-}
-
-.box {
-    width: 200px;
-    padding: 20px;
-    border: 1px solid #B0B0B0;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth */
-    margin: 10px; /* Add margin between boxes */
-    position: relative;
-    z-index: 2; /* Ensure content boxes are above puddles */
-}
-
-.puddle {
-    background-color: #B0B0B0;
-    border-radius: 50%;
-    position: absolute;
-    display: none;
-    animation: puddleAnimation 3s ease-in-out infinite;
-    opacity: 0; /* Initial opacity set to 0 */
-    z-index: 0; /* Ensure puddles are below content boxes */
-}
-
-.puddle.appear {
-    display: block;
-    opacity: 1; /* Change opacity to 1 when appearing */
-    animation: puddleAppear 1s ease-in-out;
-}
-
-@keyframes puddleAppear {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+    margin-top: 20px;
 }
