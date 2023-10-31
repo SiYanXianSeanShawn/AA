@@ -9,30 +9,17 @@ body {
     font-family: Georgia, serif;
     padding: 15px;
     text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .logo {
     font-family: "Courier New", monospace;
     font-weight: bold;
-    margin-right: 20px;
 }
 
 .navbar a {
     margin: 0 15px;
     color: white;
     text-decoration: none;
-}
-
-.search-bar {
-    width: 20px;
-    height: 20px;
-    background: url('search-icon.png') no-repeat;
-    background-size: cover;
-    display: inline-block;
-    vertical-align: middle;
 }
 
 .content {
@@ -42,21 +29,29 @@ body {
 }
 
 .box {
-    width: 200px;
+    width: 250px;
     padding: 20px;
-    border: 1px solid #B0B0B0;
     text-align: center;
     background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth and round */
+    border-radius: 10px;
     margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
 }
 
-footer {
+.button {
     background-color: #FF0000;
     color: white;
+    border: none;
+    padding: 10px 20px;
     text-align: center;
-    padding: 15px;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #990000; /* Darker red on hover */
 }
