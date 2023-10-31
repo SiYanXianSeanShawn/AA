@@ -6,6 +6,12 @@ body {
     min-height: 100vh;
 }
 
+.logo {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
 .navbar {
     background-color: #FF0000;
     color: white;
@@ -16,17 +22,6 @@ body {
     justify-content: space-around;
 }
 
-.logo {
-    font-family: "Courier New", monospace;
-    font-weight: bold;
-    margin-right: 20px;
-}
-
-.navbar a {
-    margin: 0 15px;
-    color: white;
-    text-decoration: none;
-}
 .dropdown {
     position: relative;
     display: inline-block;
