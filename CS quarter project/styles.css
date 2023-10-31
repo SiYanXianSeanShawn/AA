@@ -1,15 +1,16 @@
 body, html {
     margin: 0;
     padding: 0;
-    height: 80%;
+    height: 70%;
 }
 
 .container {
-    min-height: 80%;
+    min-height: 70%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
 .navbar {
     background-color: #FF0000;
     color: white;
@@ -19,6 +20,8 @@ body, html {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .logo {
@@ -42,7 +45,10 @@ body, html {
 .content {
     display: flex;
     justify-content: space-around;
-    padding: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
 }
 
 .box {
