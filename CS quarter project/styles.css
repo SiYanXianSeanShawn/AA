@@ -1,6 +1,9 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .navbar {
@@ -10,8 +13,7 @@ body {
     padding: 15px;
     text-align: center;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-around;
 }
 
 .logo {
@@ -53,19 +55,23 @@ body {
 
 .content {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     padding: 20px;
+    z-index: 1;
 }
 
 .box {
     width: 200px;
+    height: 200px;
     padding: 20px;
     border: 1px solid #B0B0B0;
     text-align: center;
     background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth and round */
+    border-radius: 10px;
     margin: 10px;
 }
+
 
 footer {
     background-color: #FF0000;
