@@ -17,17 +17,27 @@
             font-family: Georgia, serif;
             padding: 15px;
             text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
 
         .logo {
             font-family: "Courier New", monospace;
             font-weight: bold;
+            font-size: 24px; /* Make the logo bigger */
         }
 
         .navbar a {
             margin: 0 15px;
             color: white;
             text-decoration: none;
+            font-size: 18px; /* Make the navigation links bigger */
+        }
+
+        .separator {
+            color: white;
+            font-size: 18px; /* Make the separator "|" bigger */
         }
 
         .search-bar {
@@ -43,6 +53,7 @@
             display: flex;
             justify-content: space-around;
             padding: 20px;
+            flex-wrap: wrap; /* Allow content to wrap to the next line if the screen size is smaller */
         }
 
         .box {
@@ -60,6 +71,7 @@
             color: white;
             text-align: center;
             padding: 15px;
+            width: 100%;
         }
     </style>
 </head>
@@ -68,9 +80,11 @@
     <div class="navbar">
         <div class="logo">BORED</div>
         <a href="#">Home</a>
+        <span class="separator">|</span>
         <a href="#">About</a>
-        <div class="search-bar"></div>
+        <span class="separator">|</span>
         <a href="#">Feedback</a>
+        <div class="search-bar"></div>
     </div>
 
     <div class="content">
