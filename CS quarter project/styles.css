@@ -1,3 +1,6 @@
+Certainly, here are the CSS updates included directly in the code:
+
+```css
 body {
     margin: 0;
     font-family: Georgia, serif;
@@ -20,7 +23,6 @@ body {
     font-size: 24px;
 }
 
-
 .nav-link {
     margin: 0 15px;
     color: white;
@@ -39,8 +41,15 @@ footer {
     text-align: center;
     padding: 15px;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.footer-item {
+    margin: 0 15px;
+    font-size: 14px;
+}
 
 .content {
     display: flex;
@@ -75,25 +84,3 @@ footer {
 .button:hover {
     background-color: #CC3300;
 }
-
-.footer-button {
-    background-color: #FF3300;
-    display: flex;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 18px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    margin: 5px;
-    margin-left: 10px;
-}
-
-.footer-button:hover {
-    background-color: #CC3300;
-}
-
