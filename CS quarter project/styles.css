@@ -26,35 +26,10 @@ body {
     overflow: hidden;
 }
 
-.puddle {
-    background-color: #B0B0B0;
-    border-radius: 50%;
-    position: absolute;
-    display: none;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-}
-
-/* Adjust the size of the puddles as per your preference */
 .puddle1 { width: 40px; height: 40px; }
 .puddle2 { width: 50px; height: 50px; }
-/* ... Add more puddles here ... */
-.puddle20 { width: 30px; height: 30px; }
+.puddle3 { width: 30px; height: 30px; }
 
-/* Rest of the CSS remains unchanged */
-/* ... */
-
-.box {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    border: 1px solid #B0B0B0;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    margin: 10px; /* Add margin between boxes */
-}
 
 footer {
     background-color: #FF0000;
@@ -65,7 +40,6 @@ footer {
     bottom: 0;
     width: 100%;
 }
-/* ... (previous styles remain unchanged) ... */
 
 .content {
     position: relative;
