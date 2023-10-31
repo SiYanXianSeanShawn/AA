@@ -91,9 +91,8 @@ footer {
     100% { opacity: 0; }
 }
 
-
 .puddle.appear {
     display: block;
     opacity: 1; /* Change opacity to 1 when appearing */
-    animation: puddleAppear 1s ease-in-out;
+    animation: puddleAppear 1s ease-in-out, puddleDisappear 1s ease-in-out;
 }
