@@ -78,6 +78,7 @@ footer {
 
 .footer-button {
     background-color: #FF3300;
+    display: flex;
     color: white;
     border: none;
     padding: 10px 20px;
@@ -89,6 +90,7 @@ footer {
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin: 5px;
+    margin-left: 10px;
 }
 
 .footer-button:hover {
