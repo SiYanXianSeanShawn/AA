@@ -20,6 +20,7 @@ body {
     font-size: 24px;
 }
 
+
 .nav-link {
     margin: 0 15px;
     color: white;
@@ -31,6 +32,15 @@ body {
     color: white;
     font-size: 18px;
 }
+
+footer {
+    background-color: #FF0000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    width: 100%;
+}
+
 
 .content {
     display: flex;
