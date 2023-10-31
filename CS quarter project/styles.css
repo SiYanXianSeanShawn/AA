@@ -6,6 +6,11 @@ body {
     min-height: 100vh;
 }
 
+a {
+    color: inherit; /* Set the default color for links */
+    text-decoration: none; /* Remove underline from links */
+}
+
 .logo {
     font-family: "Courier New", monospace;
     font-weight: bold;
@@ -40,12 +45,13 @@ body {
 }
 
 .search-bar {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     background: url('search-icon.png') no-repeat;
     background-size: cover;
     display: inline-block;
     vertical-align: middle;
+    margin-right: 10px; /* Add some space between search bar and other elements */
 }
 
 .content {
@@ -66,7 +72,6 @@ body {
     border-radius: 10px;
     margin: 10px;
 }
-
 
 footer {
     background-color: #FF0000;
