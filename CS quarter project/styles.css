@@ -77,6 +77,7 @@ footer {
 
 .box {
     width: 200px;
+    height: 200px;
     padding: 20px;
     border: 1px solid #B0B0B0;
     text-align: center;
@@ -92,11 +93,9 @@ footer {
     border-radius: 50%;
     position: absolute;
     display: none;
-    animation: puddleAnimation 3s ease-in-out infinite;
+    animation: puddleAnimation 3s ease-in-out infinite, puddleDisappear 2s ease-in-out;
     opacity: 0; /* Initial opacity set to 0 */
     z-index: 0; /* Ensure puddles are below content boxes */
-    animation: puddleAnimation 3s ease-in-out, puddleDisappear 2s ease-in-out;
-    opacity: 0; /* Set initial opacity to 0 for the disappearing effect */
 }
 
 .puddle.appear {
