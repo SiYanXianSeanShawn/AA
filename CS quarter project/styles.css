@@ -26,11 +26,6 @@ body {
     overflow: hidden;
 }
 
-.puddle1 { width: 40px; height: 40px; }
-.puddle2 { width: 50px; height: 50px; }
-.puddle3 { width: 30px; height: 30px; }
-
-
 footer {
     background-color: #FF0000;
     color: white;
@@ -72,10 +67,18 @@ footer {
     z-index: 0; /* Ensure puddles are below content boxes */
 }
 
-.puddle.appear {
-    display: block;
-    opacity: 1; /* Change opacity to 1 when appearing */
-    animation: puddleAppear 1s ease-in-out;
+.puddle1 { width: 80px; height: 80px; }
+.puddle2 { width: 120px; height: 120px; }
+.puddle3 { width: 160px; height: 160px; }
+.puddle4 { width: 200px; height: 200px; }
+.puddle5 { width: 240px; height: 240px; }
+
+}
+
+@keyframes puddleAnimation {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
 }
 
 @keyframes puddleAppear {
@@ -86,4 +89,11 @@ footer {
 @keyframes puddleDisappear {
     0% { opacity: 1; }
     100% { opacity: 0; }
+}
+
+
+.puddle.appear {
+    display: block;
+    opacity: 1; /* Change opacity to 1 when appearing */
+    animation: puddleAppear 1s ease-in-out;
 }
