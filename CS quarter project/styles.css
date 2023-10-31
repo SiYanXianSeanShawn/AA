@@ -75,3 +75,23 @@ footer {
 .button:hover {
     background-color: #CC3300;
 }
+
+.footer-button {
+    background-color: #FF3300;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin: 5px;
+}
+
+.footer-button:hover {
+    background-color: #CC3300;
+}
+
