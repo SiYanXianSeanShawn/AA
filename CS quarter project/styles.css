@@ -1,9 +1,6 @@
 body {
     margin: 0;
     font-family: Georgia, serif;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .navbar {
@@ -12,18 +9,46 @@ body {
     font-family: Georgia, serif;
     padding: 15px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
     font-family: "Courier New", monospace;
     font-weight: bold;
+    margin-right: 20px;
 }
 
-.background {
-    background-color: #ffffff;
-    position: relative;
-    height: 100vh;
-    overflow: hidden;
+.navbar a {
+    margin: 0 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    width: 20px;
+    height: 20px;
+    background: url('search-icon.png') no-repeat;
+    background-size: cover;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.box {
+    width: 200px;
+    padding: 20px;
+    border: 1px solid #B0B0B0;
+    text-align: center;
+    background-color: #FFFFFF;
+    border-radius: 10px; /* Make box edges smooth and round */
+    margin: 10px;
 }
 
 footer {
@@ -34,65 +59,4 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-}
-
-.content {
-    position: relative;
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    z-index: 1; /* Ensure content boxes are above puddles */
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    border: 1px solid #B0B0B0;
-    text-align: center;
-    background-color: #FFFFFF;
-    border-radius: 10px; /* Make box edges smooth */
-    margin: 10px; /* Add margin between boxes */
-    position: relative;
-    z-index: 2; /* Ensure content boxes are above puddles */
-}
-
-.puddle {
-    background-color: #B0B0B0;
-    border-radius: 50%;
-    position: absolute;
-    display: none;
-    animation: puddleAnimation 3s ease-in-out infinite, puddleDisappear 2s ease-in-out;
-    opacity: 0; /* Initial opacity set to 0 */
-    z-index: 0; /* Ensure puddles are below content boxes */
-}
-
-.puddle1 { width: 80px; height: 80px; }
-.puddle2 { width: 120px; height: 120px; }
-.puddle3 { width: 160px; height: 160px; }
-.puddle4 { width: 200px; height: 200px; }
-.puddle5 { width: 240px; height: 240px; }
-
-}
-
-@keyframes puddleAnimation {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
-
-@keyframes puddleAppear {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
-
-@keyframes puddleDisappear {
-    0% { opacity: 1; }
-    100% { opacity: 0; }
-}
-
-.puddle.appear {
-    display: block;
-    opacity: 1; /* Change opacity to 1 when appearing */
-    animation: puddleAppear 1s ease-in-out, puddleDisappear 1s ease-in-out;
 }
